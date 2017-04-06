@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Drum Kit</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--  main section of the website      -->
+        <div class="main-section"> 
+          
+            <!-- The Buttons that are appearing in the page         -->
+            
+           <div class="sound-buttons">
+               
+                <!--     Button A         -->
+               <div class="key" data-key='65'>
+                   <kbd>A</kbd>
+                   <span class="sound">clap</span>
+               </div>
+               
+                <!--     Button S and son on         -->
+               <div class="key" data-key='83'>
+                   <kbd>S</kbd>
+                   <span class="sound">hihat</span>
+               </div>
+               
+               <div class="key" data-key='68'>
+                   <kbd>D</kbd>
+                   <span class="sound">kick</span>
+               </div>
+               
+               <div class="key" data-key='70'>
+                   <kbd>F</kbd>
+                   <span class="sound">openhat</span>
+               </div>
+               
+               <div class="key" data-key='71'>
+                   <kbd>G</kbd>
+                   <span class="sound">boom</span>
+               </div>
+               
+               <div class="key" data-key='72'>
+                   <kbd>H</kbd>
+                   <span class="sound">ride</span>
+               </div>
+               
+               <div class="key" data-key='74'>
+                   <kbd>J</kbd>
+                   <span class="sound">snare</span>
+               </div>
+               
+               <div class="key" data-key='75'>
+                   <kbd>K</kbd>
+                   <span class="sound">tom</span>
+               </div>
+               
+               <div class="key" data-key='76'>
+                   <kbd>L</kbd>
+                   <span class="sound">tink</span>
+               </div>
+               
+           </div>
+         </div>
+            
+            <!--     Used audio and data-key to attach it to trigger when Buttons are clicked..         -->
+
+            <audio data-key="65" src="raw/clap.wav"></audio>
+            <audio data-key="83" src="raw/hihat.wav"></audio>
+            <audio data-key="68" src="raw/kick.wav"></audio>
+            <audio data-key="70" src="raw/openhat.wav"></audio>
+            <audio data-key="71" src="raw/boom.wav"></audio>
+            <audio data-key="72" src="raw/ride.wav"></audio>
+            <audio data-key="74" src="raw/snare.wav"></audio>
+            <audio data-key="75" src="raw/tom.wav"></audio>
+            <audio data-key="76" src="raw/tink.wav"></audio>
+            
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

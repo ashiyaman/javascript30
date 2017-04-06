@@ -1,0 +1,56 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-section{
+    background: linear-gradient(rgba(148, 0, 211, 0.8),rgba(30, 144, 255, 0.79)),url('hero.jpg');
+    background-size: cover;
+    color: dodgerblue;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.sound-buttons{
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sound-buttons .key{
+    display: inline-block;
+    border: 2px solid #fff;
+    font-size: 60px;
+    text-align: center;
+    width: 120px;
+    height: auto;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    border-radius: 5%;
+}
+
+.key span{
+    display: block;
+    font-size: 30px;
+}
+
+.key{
+    transition: all 0.09s;
+}
+
+.playing{
+    transform: scale(1.1);
+    border: 4px solid #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
